@@ -13,6 +13,10 @@ export default {
         "color-background": "#171717",
         "menu-color": "#172554",
       },
+      backgroundImage: {
+        "open-menu": "url('../public/svg/menu.svg')",
+        "close-menu": "url('../public/svg/close.svg')",
+      },
     },
   },
   plugins: [],
