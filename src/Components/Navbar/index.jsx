@@ -26,9 +26,15 @@ const Navbar = () => {
         } transition-[clip-path] duration-500
       md:relative md:flex md:gap-6 md:bg-transparent md:clip-circle-full`}
       >
-        <li>Acerca de mi</li>
-        <li>Proyectos</li>
-        <li>Habilidades</li>
+        <li>
+          <a href="#about-me">Acerca de mi</a>
+        </li>
+        <li>
+          <a href="#about-me">Proyectos</a>
+        </li>
+        <li>
+          <a href="#my-skills">Habilidades</a>
+        </li>
         <li>Educacion</li>
         <li>Experiencia</li>
         <li>Contacto</li>

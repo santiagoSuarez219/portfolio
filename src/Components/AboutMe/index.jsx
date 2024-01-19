@@ -3,9 +3,9 @@ import { BiLogoLinkedinSquare } from "react-icons/bi";
 import { BiLogoGithub } from "react-icons/bi";
 import Contact from "../Contact";
 
-const Main = () => {
+const AboutMe = () => {
   return (
-    <main className="py-16 text-center">
+    <main id="about-me" className="py-16 text-center">
       <h2 className="text-4xl md:text-5xl">About</h2>
       <p className="mt-8 mb-16 leading-normal text-gray-color md:w-4/5 md:mx-auto">
         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus
@@ -25,4 +25,4 @@ const Main = () => {
     </main>
   );
 };
-export default Main;
+export default AboutMe;

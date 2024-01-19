@@ -1,5 +1,5 @@
 import Header from "../../Components/Header";
-import Main from "../../Components/Main";
+import AboutMe from "../../Components/AboutMe";
 import MySkills from "../../Components/MySkills";
 import ContactMe from "../../Components/ContactMe";
 import Footer from "../../Components/Footer";
@@ -8,7 +8,7 @@ const Home = () => {
   return (
     <>
       <Header />
-      <Main />
+      <AboutMe />
       <MySkills />
       <ContactMe />
       <Footer />
