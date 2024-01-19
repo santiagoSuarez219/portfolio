@@ -25,7 +25,7 @@ const Header = () => {
         </figure>
         <article className="text-center mt-8 md:w-1/2 md:text-left">
           <h1 className="text-4xl md:text-5xl">Hola, yo soy Santiago Suarez</h1>
-          <p className="text-gray-color text-xl mt-3 mb-3">
+          <p className="text-gray-color text-xl mt-3 mb-3 max-w-[500px]">
             Soy full stack developer con JavaScript, React, NodeJs, y Express.
             Abajo esta mi correo para que me contactes.
           </p>
