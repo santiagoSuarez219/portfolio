@@ -19,6 +19,11 @@ body {
   h6 {
     @apply font-bold;
   }
+
+  input,
+  textarea {
+    @apply bg-color-background border-gray-color;
+  }
 }
 
 @layer components {
@@ -28,6 +33,10 @@ body {
 
   .icons {
     @apply text-green-color w-10 h-10;
+  }
+
+  .focus-input {
+    @apply outline-none focus:ring-1 focus:ring-green-color focus:ring-inset transition;
   }
 }
 
