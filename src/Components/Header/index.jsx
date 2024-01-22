@@ -26,8 +26,8 @@ const Header = () => {
         <article className="text-center mt-8 md:w-1/2 md:text-left">
           <h1 className="text-4xl md:text-5xl">Hola, yo soy Santiago Suarez</h1>
           <p className="text-gray-color text-xl mt-3 mb-3 max-w-[500px]">
-            Soy full stack developer con JavaScript, React, NodeJs, y Express.
-            Abajo esta mi correo para que me contactes.
+            Soy full stack developer con JavaScript, React, NodeJs, Express y
+            NestJS. Abajo esta mi correo para que me contactes.
           </p>
           <div className="mb-6 py-2 relative flex items-center justify-between border-b border-white">
             <p className="text-gray-color text-lg ">santiago8628@gmail.com</p>
@@ -46,13 +46,14 @@ const Header = () => {
 
           <div className="grid grid-cols-[repeat(auto-fit,minmax(170px,1fr))] auto-rows-[60px] gap-8 max-w-lg mx-auto md:mx-0">
             <a
-              href=""
+              href="./public/pdf/CVFullStack.pdf"
+              target="_blank"
               className="bg-green-color flex items-center justify-center"
             >
               Ver CV
             </a>
             <a
-              href=""
+              href="#about-me"
               className="flex items-center justify-center border-white border"
             >
               Leer mas
