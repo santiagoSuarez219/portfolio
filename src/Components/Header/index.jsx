@@ -1,13 +1,21 @@
 import { useState } from "react";
-import Navbar from "../Navbar";
 import { BiSolidCopy } from "react-icons/bi";
 import { CopyToClipboard } from "react-copy-to-clipboard";
+import { BiCheck } from "react-icons/bi";
+import { Toaster, toast } from "react-hot-toast";
+import Navbar from "../Navbar";
 
 const Header = () => {
   const [isCopied, setIsCopied] = useState(false);
 
   const alertCopy = () => {
     setIsCopied(true);
+    toast.success("Email copiado al portapapeles", {
+      style: {
+        background: "#333",
+        color: "#fff",
+      },
+    });
     setTimeout(() => {
       setIsCopied(false);
     }, 1500);
@@ -29,19 +37,19 @@ const Header = () => {
             Soy full stack developer con JavaScript, React, NodeJs, Express y
             NestJS. Abajo esta mi correo para que me contactes.
           </p>
-          <div className="mb-6 py-2 relative flex items-center justify-between border-b border-white">
+          <div className="mb-6 py-2 flex items-center justify-between border-b border-white transition-all">
             <p className="text-gray-color text-lg ">santiago8628@gmail.com</p>
-            <CopyToClipboard text="santiago8628@gmail.com">
-              <BiSolidCopy
-                className="w-5 h-5 text-green-color cursor-pointer"
-                onClick={() => alertCopy()}
-              />
-            </CopyToClipboard>
-            {isCopied && (
-              <p className="absolute -right-3 -top-5 bg-card-color p-1 text-xs">
-                Copiado!
-              </p>
+            {isCopied ? (
+              <BiCheck className="w-5 h-5 text-green-color cursor-pointer" />
+            ) : (
+              <CopyToClipboard text="santiago8628@gmail.com">
+                <BiSolidCopy
+                  className="w-5 h-5 text-green-color cursor-pointer"
+                  onClick={() => alertCopy()}
+                />
+              </CopyToClipboard>
             )}
+            <Toaster />
           </div>
 
           <div className="grid grid-cols-[repeat(auto-fit,minmax(170px,1fr))] auto-rows-[60px] gap-8 max-w-lg mx-auto md:mx-0">
