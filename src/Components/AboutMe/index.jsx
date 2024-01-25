@@ -18,10 +18,8 @@ const AboutMe = () => {
         investigación y desarrollo de prototipos orientados al Internet de las
         Cosas y al desarrollo de aplicaciones web.
       </p>
-      <div className="w-full mb-16 mt-4 text-green-color cursor-pointer">
-        <a href="" className="border-b border-green-color">
-          Leer mas
-        </a>
+      <div className="w-full mb-16 mt-4 text-gray-color hover:text-green-color cursor-pointer">
+        <a href="">Leer mas</a>
       </div>
       <div className="grid gap-8 justify-center justify-items-center md:grid-cols-3">
         <Contact

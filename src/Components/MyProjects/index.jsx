@@ -1,22 +1,28 @@
+import ProjectCard from "../ProjectCard";
+
 const MyProjects = () => {
+  const description =
+    "Esta aplicacion fue creada con React, Tailwind y Vite. Es un ecommerce de venta de ropa.";
   return (
     <section id="my-skills" className="py-16 text-center">
       <h2 className="text-4xl mb-16 md:text-5xl">Mis proyectos</h2>
-      <div className="bg-card-color">Hola</div>
-      {/* <div className="bg-card-color py-12 px-8 text-gray-color grid grid-cols-[repeat(auto-fit,minmax(170px,1fr))] gap-12 place-items-center ">
-        <article className="space-y-4">
-          <p className="text-5xl font-bold ">50%</p>
-          <h3 className="text-green-color text-2xl">HTML</h3>
-        </article>
-        <article className="space-y-4">
-          <p className="text-5xl font-bold ">50%</p>
-          <h3 className="text-green-color text-2xl">HTML</h3>
-        </article>
-        <article className="space-y-4">
-          <p className="text-5xl font-bold ">50%</p>
-          <h3 className="text-green-color text-2xl">HTML</h3>
-        </article>
-      </div> */}
+      <div className="py-16 bg-red mx-auto grid gap-8 auto-rows-max grid-cols-[repeat(auto-fit,minmax(280px,1fr))] justify-items-center items-center">
+        <ProjectCard
+          title={"Ecommerce"}
+          description={description}
+          imageUrl={"../public/img/app_ecommerce.png"}
+        />
+        <ProjectCard
+          title={"Smartgrow"}
+          description={description}
+          imageUrl={"../public/img/app-smartgrow.jpg"}
+        />
+        <ProjectCard
+          title={"Tareas"}
+          description={description}
+          imageUrl={"../public/img/app_ecommerce.png"}
+        />
+      </div>
     </section>
   );
 };
