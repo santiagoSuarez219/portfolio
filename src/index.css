@@ -28,7 +28,7 @@ body {
 
 @layer components {
   .icon-container {
-    @apply p-4 w-max aspect-square bg-card-color rounded-full;
+    @apply p-2 w-max aspect-square bg-card-color rounded-full hover:bg-card-color/50;
   }
 
   .icons {

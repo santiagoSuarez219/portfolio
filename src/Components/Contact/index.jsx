@@ -13,8 +13,8 @@ const Contact = ({ title, value, icon: Icon, link }) => {
   };
 
   return (
-    <article className="w-max grid justify-items-center hover:scale-105 transition-transform">
-      <div className="icon-container cursor-pointer">
+    <article className="w-max grid justify-items-center">
+      <div className="icon-container hover:bg-card-color/50 cursor-pointer">
         {title === "Email" ? (
           <CopyToClipboard text={value}>
             <Icon className="icons" onClick={() => alertCopy()} />

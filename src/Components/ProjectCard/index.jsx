@@ -7,10 +7,8 @@ const ProjectCard = ({ title, description, imageUrl }) => {
           alt={title}
           className="object-cover aspect-square rounded-lg"
         />
-        <article className="flex flex-col gap-2 py-2">
-          <h2 className="uppercase text-green-color text-center text-xl">
-            {title}
-          </h2>
+        <article className="flex flex-col gap-2 py-2 text-right">
+          <h2 className="uppercase text-green-color  text-xl">{title}</h2>
           <p className="text-base text-gray-color">{description}</p>
         </article>
       </figure>
