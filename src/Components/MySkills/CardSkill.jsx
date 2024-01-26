@@ -4,8 +4,10 @@ const CardSkill = ({ text, value, icon: Icon }) => {
       <figure className="w-3/5 h-3/5">
         <Icon className="w-full h-full object-cover" />
       </figure>
-      <p className="text-2xl font-semibold">{text}</p>
-      <p className="text-xl font-semibold text-gray-color">{value}</p>
+      <p className="text-xl lg:text-2xl font-semibold">{text}</p>
+      <p className="text-base lg:text-xl font-semibold text-gray-color">
+        {value}
+      </p>
     </div>
   );
 };
