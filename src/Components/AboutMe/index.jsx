@@ -2,17 +2,17 @@ import AboutMeImg from "../../img/portfolio03.jpg";
 
 const AboutMe = () => {
   return (
-    <main id="about-me" className="py-6 text-right">
-      <h2 className="text-4xl md:text-5xl">Acerca de mi</h2>
-      <div className="flex w-full justify-between">
-        <figure className="w-2/5 hover:scale-105 transition-transform">
+    <main id="about-me" className="lg:py-6 py-4 lg:text-right text-center">
+      <h2 className="text-4xl lg:text-5xl">Acerca de mi</h2>
+      <div className="flex w-full lg:justify-between pt-6 ">
+        <figure className="hidden lg:block w-2/5 hover:scale-105 transition-transform">
           <img
             src={AboutMeImg}
             alt="about-me-img"
             className="aspect-square object-cover rounded-lg"
           />
         </figure>
-        <article className="w-1/2 mt-6 text-xl leading-normal text-gray-color">
+        <article className="w-full lg:w-1/2 text-lg lg:text-xl leading-normal text-gray-color">
           <p>
             Soy un desarrollador full stack con 6 meses de experiencia en el
             desarrollo de aplicaciones web. Vivo en Medellín, Colombia. Mi
@@ -24,7 +24,7 @@ const AboutMe = () => {
             en proyectos de investigación y desarrollo de prototipos orientados
             al Internet de las Cosas y al desarrollo de aplicaciones web.
           </p>
-          <div className="mt-4 text-gray-color text-lg hover:text-green-color cursor-pointer">
+          <div className="mt-2 lg:mt-4 text-gray-color text-base lg:text-lg hover:text-green-color cursor-pointer">
             <a href="">Leer mas</a>
           </div>
         </article>

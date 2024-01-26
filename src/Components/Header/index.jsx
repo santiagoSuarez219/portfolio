@@ -12,8 +12,8 @@ const Header = () => {
   return (
     <header>
       <Navbar />
-      <section className="pt-10 pb-16 md:flex justify-between items-center gap-8">
-        <figure className="md:order-1">
+      <section className="lg:pt-10 md:py-6 py-4 lg:pb-16 md:flex justify-between items-center gap-8">
+        <figure className="md:order-1 hover:scale-105 transition-transform">
           <img
             src="./public/img/foto1.jpg"
             alt="foto1"
@@ -21,8 +21,8 @@ const Header = () => {
           />
         </figure>
         <article className="text-center mt-8 p-2 md:w-1/2 md:text-left">
-          <h1 className="text-4xl md:text-5xl">Hola, yo soy Santiago Suarez</h1>
-          <p className="text-gray-color text-xl my-4 md:my-6 max-w-[500px]">
+          <h1 className="text-4xl lg:text-5xl">Hola, yo soy Santiago Suarez</h1>
+          <p className="text-gray-color text-lg lg:text-xl my-4 lg:my-6 max-w-[500px]">
             Soy desarrollador full stack con javaScript, react, nodejs, express
             y nestjs. Abajo puedes copiar mi email y ponernos en contacto.
           </p>
@@ -40,7 +40,7 @@ const Header = () => {
           <a
             href="./public/pdf/CVFullStack.pdf"
             target="_blank"
-            className="w-full lg:w-2/3 mt-6 h-16 bg-green-color flex items-center justify-center rounded-lg hover:scale-105 transition-transform text-xl font-semibold"
+            className="w-full lg:w-2/3 mt-6 h-16 bg-green-color flex items-center justify-center rounded-lg hover:scale-105 transition-transform text-base md:text-lg lg:text-xl font-semibold"
           >
             Ver CV
           </a>

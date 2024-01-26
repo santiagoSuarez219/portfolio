@@ -15,7 +15,7 @@ const ContactContainer = ({ text, icon: Icon }) => {
   return (
     <CopyToClipboard text={text}>
       <div
-        className="flex items-center gap-2 md:gap-4 text-xl text-gray-color cursor-pointer mb-2"
+        className="flex items-center gap-2 md:gap-4 text-base md:text-lg lg:text-xl text-gray-color cursor-pointer mb-2"
         onClick={() => alertCopy()}
       >
         <div className="icon-container">

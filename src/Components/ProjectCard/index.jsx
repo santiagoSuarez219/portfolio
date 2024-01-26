@@ -1,16 +1,15 @@
 const ProjectCard = ({ title, description, imageUrl }) => {
   return (
-    <div className=" h-auto max-w-sm hover:scale-105 transition-transform ">
-      <figure>
+    <div className=" h-auto max-w-sm hover:scale-105 transition-transform cursor-pointer">
+      <figure className="relative">
         <img
           src={imageUrl}
           alt={title}
           className="object-cover aspect-square rounded-lg"
         />
-        <article className="flex flex-col gap-2 py-2 text-right">
-          <h2 className="uppercase text-green-color  text-xl">{title}</h2>
-          <p className="text-base text-gray-color">{description}</p>
-        </article>
+        <span className="absolute bottom-0 left-0 p-6 text-green-color text-3xl font-semibold">
+          {title}
+        </span>
       </figure>
     </div>
   );
