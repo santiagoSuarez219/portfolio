@@ -1,6 +1,6 @@
 const ContactMe = () => {
   return (
-    <section className="py-16">
+    <section className="py-16 flex flex-col items-center">
       <h2 className="text-4xl mb-16 text-center md:text-5xl">
         Sigamos en contacto
       </h2>

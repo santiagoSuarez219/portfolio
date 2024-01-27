@@ -1,5 +1,4 @@
 import { useState, useEffect } from "react";
-import ProjectCard from "../ProjectCard";
 import CardProject from "./CardProject";
 import Ecommerce from "../../img/01_project.jpg";
 import Smartgrow from "../../img/02_project.jpg";
@@ -62,7 +61,7 @@ const MyProjects = () => {
       <h2 className="w-full text-left text-4xl mb-4 md:mb-16 lg:text-5xl">
         Mis proyectos
       </h2>
-      <div className="w-4/5 flex items-center justify-center overflow-hidden h-[430px] gap-6">
+      <div className="w-full lg:w-4/5 flex flex-col md:flex-row items-center justify-center overflow-hidden md:h-[430px] gap-6">
         {projects.map((project) => (
           <CardProject
             key={project.id}
@@ -71,23 +70,6 @@ const MyProjects = () => {
           />
         ))}
       </div>
-      {/* <div className="bg-red mx-auto grid gap-6 auto-rows-max grid-cols-[repeat(auto-fit,minmax(280px,1fr))] justify-items-center items-center">
-        <ProjectCard
-          title={"Ecommerce"}
-          description={description}
-          imageUrl={"../public/img/app_ecommerce.png"}
-        />
-        <ProjectCard
-          title={"Smartgrow"}
-          description={description}
-          imageUrl={"../public/img/app-smartgrow.jpg"}
-        />
-        <ProjectCard
-          title={"Tareas"}
-          description={description}
-          imageUrl={"../public/img/app_ecommerce.png"}
-        />
-      </div> */}
     </section>
   );
 };

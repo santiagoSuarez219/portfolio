@@ -7,8 +7,6 @@ import Navbar from "./Navbar";
 import ContactContainer from "./ContactContainer";
 
 const Header = () => {
-  const [isCopied, setIsCopied] = useState(false);
-
   return (
     <header>
       <Navbar />
