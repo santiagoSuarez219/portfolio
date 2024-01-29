@@ -1,41 +1,43 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useContext } from "react";
 import CardProject from "./CardProject";
+import { Context } from "../../Context";
 import Ecommerce from "../../img/01_project.jpg";
 import Smartgrow from "../../img/02_project.jpg";
 
 const MyProjects = () => {
-  const [projects, setProjects] = useState([
-    {
-      id: 1,
-      title: "Ecommerce",
-      style: true,
-      image: Ecommerce,
-    },
-    {
-      id: 2,
-      title: "Smartgrow",
-      style: false,
-      image: Smartgrow,
-    },
-    {
-      id: 3,
-      title: "ToDos",
-      style: false,
-      image: Ecommerce,
-    },
-    {
-      id: 4,
-      title: "Gastos Personales",
-      style: false,
-      image: Ecommerce,
-    },
-    {
-      id: 5,
-      title: "Veterinaria",
-      style: false,
-      image: Ecommerce,
-    },
-  ]);
+  const { projects, setProjects } = useContext(Context);
+  // const [projects, setProjects] = useState([
+  //   {
+  //     id: 1,
+  //     title: "Ecommerce",
+  //     style: true,
+  //     image: Ecommerce,
+  //   },
+  //   {
+  //     id: 2,
+  //     title: "Smartgrow",
+  //     style: false,
+  //     image: Smartgrow,
+  //   },
+  //   {
+  //     id: 3,
+  //     title: "ToDos",
+  //     style: false,
+  //     image: Ecommerce,
+  //   },
+  //   {
+  //     id: 4,
+  //     title: "Gastos Personales",
+  //     style: false,
+  //     image: Ecommerce,
+  //   },
+  //   {
+  //     id: 5,
+  //     title: "Veterinaria",
+  //     style: false,
+  //     image: Ecommerce,
+  //   },
+  // ]);
   const [project, setProject] = useState({});
 
   useEffect(() => {

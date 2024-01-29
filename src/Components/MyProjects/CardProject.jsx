@@ -1,8 +1,11 @@
+import { HiArrowUpRight } from "react-icons/hi2";
+import { Link } from "react-router-dom";
+
 const CardProject = ({ project, setProject }) => {
   const { style, title, image } = project;
   return (
     <div
-      className={`h-full w-full md:h-full md:w-0 md:grow-[0.5] relative cursor-crosshair bg-card-color rounded-3xl transition-all ease-in duration-700 ${
+      className={`h-full w-full md:h-full md:w-0 md:grow-[0.5] relative cursor-crosshair rounded-3xl transition-all ease-in duration-700 border-2 border-green-color ${
         style && "md:grow-[5]"
       }`}
       onClick={() => setProject(project)}
@@ -14,13 +17,16 @@ const CardProject = ({ project, setProject }) => {
           className="aspect-square object-cover w-full h-full rounded-3xl "
         />
       </figure>
-      <h3
-        className={`text-2xl absolute bottom-5 left-5 m-0 md:opacity-0 ${
-          style && "md:opacity-100 duration-300 ease-in delay-700 "
+      <Link
+        to="/project"
+        className={`text-2xl absolute bottom-5 left-8 m-0 md:opacity-0 flex items-center gap-3 ${
+          style &&
+          "md:opacity-100 duration-300 ease-in delay-700 cursor-pointer"
         }`}
       >
-        {title}
-      </h3>
+        <h3>{title}</h3>
+        <HiArrowUpRight className="text-green-color h-9 w-9 rounded-full p-2 border-2 border-green-color" />
+      </Link>
     </div>
   );
 };
