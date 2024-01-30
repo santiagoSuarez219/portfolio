@@ -5,7 +5,7 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: "DM Sans", sans-serif;
+  font-family: monospace;
   background-color: #171717;
   color: white;
 }
@@ -23,6 +23,10 @@ body {
   input,
   textarea {
     @apply bg-color-background border-gray-color;
+  }
+
+  figure {
+    @apply hover:scale-105 transition-transform;
   }
 }
 

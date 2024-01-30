@@ -7,6 +7,7 @@ const alertCopy = () => {
     style: {
       background: "#333",
       color: "#fff",
+      fontSize: "1rem",
     },
   });
 };

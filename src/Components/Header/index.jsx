@@ -5,6 +5,7 @@ import { BiLogoLinkedinSquare } from "react-icons/bi";
 import { Toaster } from "react-hot-toast";
 import Navbar from "./Navbar";
 import ContactContainer from "./ContactContainer";
+import "./styles.css";
 
 const Header = () => {
   return (
@@ -19,7 +20,9 @@ const Header = () => {
           />
         </figure>
         <article className="text-center mt-8 p-2 md:w-1/2 md:text-left">
-          <h1 className="text-4xl lg:text-5xl">Hola, yo soy Santiago Suarez</h1>
+          <span className="my-name text-4xl lg:text-5xl font-semibold py-2">
+            Hola, yo soy Santiago Suarez
+          </span>
           <p className="text-gray-color text-lg lg:text-xl my-4 lg:my-6 max-w-[500px]">
             Soy desarrollador full stack con javaScript, react, nodejs, express
             y nestjs. Abajo puedes copiar mi email y ponernos en contacto.

@@ -1,42 +1,63 @@
-import CoverPage from "../../img/13.jpg";
-import { BiLogoReact } from "react-icons/bi";
-import { BiLogoTailwindCss } from "react-icons/bi";
+import { useContext } from "react";
+import { Link } from "react-router-dom";
+import { HiArrowSmallLeft } from "react-icons/hi2";
 import ItemListProject from "../../Components/ItemListProject";
 import ToolProjectCard from "../../Components/ToolProjectCard";
+import { Context } from "../../Context";
 
 const Project = () => {
+  const { project } = useContext(Context);
   return (
-    <aside className="w-full h-screen grid grid-cols-2 py-6 text-gray-color items-center text-xl">
-      <article className="w-full pr-6 flex flex-col gap-6">
-        <h1 className="w-full text-5xl text-white">App Ecommerce </h1>
-        <p>
-          Esta app fue creada con el fin de practicar lo aprendido en los cursos
-          de React. Esta aplicacion es una tienda en linea adaptable a cualquier
-          dispositivo y tiene las siguientes funcionalidades
-        </p>
-        <ul className="w-full">
-          <ItemListProject text="Visualizar de productos" />
-          <ItemListProject text="Agregar y eliminar productos de un carrito de compras" />
-          <ItemListProject text="Ver ordenes o compras anteriores" />
-          <ItemListProject text="Ver el total de la compra" />
-          <ItemListProject text="Filtrar productos por el nombre y/o categoria" />
-        </ul>
-        <div className="w-full">
-          <h2 className="mb-2 text-white text-lg">Tecnologias utilizadas</h2>
-          <ul className="flex gap-4">
-            <ToolProjectCard text={"React"} icon={BiLogoReact} />
-            <ToolProjectCard text={"Tailwind"} icon={BiLogoTailwindCss} />
-          </ul>
+    <aside className="w-full h-screen grid grid-cols-2 py-6 gap-6 text-gray-color text-lg items-center">
+      <article className="w-full h-full flex flex-col justify-center gap-6">
+        <div className="flex items-center gap-6">
+          <Link to="/">
+            <HiArrowSmallLeft className="text-green-color w-10 h-10 animate-bounce cursor-pointer" />
+          </Link>
+          <h1 className="w-full text-5xl text-white">{project.title}</h1>
         </div>
+        <p>{project.description}</p>
+        <ul className="w-full">
+          {project.items.map((item, index) => (
+            <ItemListProject key={index} text={item} />
+          ))}
+        </ul>
         <input
           type="submit"
           value="Ir al proyecto"
           className="w-full bg-green-color/85 text-white p-2 rounded-lg cursor-pointer text-lg hover:bg-green-color transition-all"
         />
       </article>
-      <figure className="w-full bg-card-color p-2 rounded-lg hover:scale-105 transitio">
-        <img src={CoverPage} alt="" className="object-contain" />
-      </figure>
+      <div className="flex flex-col gap-6 p-4">
+        <figure className="w-full bg-card-color p-2 rounded-lg">
+          <img
+            src={project.image}
+            alt="image-project"
+            className="object-contain"
+          />
+        </figure>
+        <article>
+          <h2 className="mb-2 text-white text-lg text-right">
+            Tecnologias utilizadas
+          </h2>
+          <ul className="flex gap-4 justify-end">
+            {project.tools.map((tool, index) => (
+              <ToolProjectCard key={index} text={tool.name} icon={tool.icon} />
+            ))}
+          </ul>
+        </article>
+      </div>
+
+      {/* 
+        
+       
+        
+        <div className="w-full">
+          
+        </div>
+        
+      </article>
+ */}
     </aside>
   );
 };

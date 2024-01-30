@@ -10,7 +10,7 @@ const CardProject = ({ project, setProject }) => {
       }`}
       onClick={() => setProject(project)}
     >
-      <figure className="w-full h-full">
+      <figure className="w-full h-full hover:scale-100">
         <img
           src={image}
           alt="ecommerce-app"

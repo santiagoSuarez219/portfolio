@@ -1,5 +1,10 @@
 import { createContext, useState } from "react";
-import Ecommerce from "../img/13.jpg";
+import Ecommerce from "../img/01_ecommerce.jpg";
+import Smartgrow from "../img/01_smartgrow.png";
+import { BiLogoReact } from "react-icons/bi";
+import { BiLogoTailwindCss } from "react-icons/bi";
+import { SiNestjs } from "react-icons/si";
+import { BiLogoMongodb } from "react-icons/bi";
 
 const Context = createContext();
 
@@ -20,11 +25,11 @@ const Provider = ({ children }) => {
       tools: [
         {
           name: "React",
-          icon: "BiLogoReact",
+          icon: BiLogoReact,
         },
         {
           name: "Tailwind",
-          icon: "BiLogoTailwindCss",
+          icon: BiLogoTailwindCss,
         },
       ],
       image: Ecommerce,
@@ -34,7 +39,7 @@ const Provider = ({ children }) => {
       id: 2,
       title: "App Smartgrow",
       description:
-        "Esta app es un proyecto fullstack que integra internet de las cosas y fue creada para un proyecto de investigacion de Cannabis en el Insituto Tecnologico Metropolitano, es adaptable a cualquier dispositivo y tiene las siguientes funcionalidades",
+        "Proyecto fullstack que integra internet de las cosas, creada para un proyecto de investigacion de Cannabis en el ITM, es adaptable a cualquier dispositivo y tiene las siguientes funcionalidades",
       items: [
         "Visualizar variables agro-climaticas del cultivo en tiempo real",
         "Visualizar el estado del sistema",
@@ -46,30 +51,33 @@ const Provider = ({ children }) => {
       tools: [
         {
           name: "React",
-          icon: "BiLogoReact",
+          icon: BiLogoReact,
         },
         {
           name: "Tailwind",
-          icon: "BiLogoTailwindCss",
+          icon: BiLogoTailwindCss,
         },
         {
           name: "NestJS",
-          icon: "BiLogoTailwindCss",
+          icon: SiNestjs,
         },
         {
           name: "MongoDB",
-          icon: "BiLogoTailwindCss",
+          icon: BiLogoMongodb,
         },
       ],
-      image: Ecommerce,
+      image: Smartgrow,
       style: false,
     },
   ]);
+  const [project, setProject] = useState(projects[0]);
   return (
     <Context.Provider
       value={{
         projects,
         setProjects,
+        project,
+        setProject,
       }}
     >
       {children}
