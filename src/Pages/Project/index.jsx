@@ -8,13 +8,15 @@ import { Context } from "../../Context";
 const Project = () => {
   const { project } = useContext(Context);
   return (
-    <aside className="w-full h-screen grid grid-cols-2 py-6 gap-6 text-gray-color text-lg items-center">
-      <article className="w-full h-full flex flex-col justify-center gap-6">
-        <div className="flex items-center gap-6">
+    <aside className="w-full lg:h-screen grid lg:grid-cols-2 py-4 md:py-6 md:gap-6 gap-4 text-gray-color text-base md:text-lg items-center">
+      <article className="w-full h-full flex flex-col justify-center md:gap-6 gap-4">
+        <div className="flex items-center md:gap-6 gap-4">
           <Link to="/">
-            <HiArrowSmallLeft className="text-green-color w-10 h-10 animate-bounce cursor-pointer" />
+            <HiArrowSmallLeft className="text-green-color w-6 h-6 md:w-10 md:h-10 animate-bounce cursor-pointer" />
           </Link>
-          <h1 className="w-full text-5xl text-white">{project.title}</h1>
+          <h1 className="w-full text-2xl md:text-5xl text-white">
+            {project.title}
+          </h1>
         </div>
         <p>{project.description}</p>
         <ul className="w-full">
@@ -25,18 +27,18 @@ const Project = () => {
         <input
           type="submit"
           value="Ir al proyecto"
-          className="w-full bg-green-color/85 text-white p-2 rounded-lg cursor-pointer text-lg hover:bg-green-color transition-all"
+          className="w-full bg-green-color/85 text-white p-2 rounded-lg cursor-pointer text-lg md:hover:bg-green-color transition-all animate-bounce md:animate-none "
         />
       </article>
-      <div className="flex flex-col gap-6 p-4">
-        <figure className="w-full bg-card-color p-2 rounded-lg">
+      <div className="flex flex-col gap-6 md:p-4">
+        <figure className="hidden md:block w-full bg-card-color p-2 rounded-lg md:order-last ld:order-none">
           <img
             src={project.image}
             alt="image-project"
             className="object-contain"
           />
         </figure>
-        <article>
+        <article className="">
           <h2 className="mb-2 text-white text-lg text-right">
             Tecnologias utilizadas
           </h2>
@@ -47,17 +49,6 @@ const Project = () => {
           </ul>
         </article>
       </div>
-
-      {/* 
-        
-       
-        
-        <div className="w-full">
-          
-        </div>
-        
-      </article>
- */}
     </aside>
   );
 };

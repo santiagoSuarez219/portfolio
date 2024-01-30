@@ -11,19 +11,19 @@ const Header = () => {
   return (
     <header>
       <Navbar />
-      <section className="lg:pt-10 md:py-6 py-4 lg:pb-16 md:flex justify-between items-center gap-8">
-        <figure className="md:order-1 hover:scale-105 transition-transform">
+      <span className="my-name text-4xl lg:text-5xl font-semibold py-2 lg:mt-16 md:mt-6">
+        Hola, Yo soy Santiago Suarez
+      </span>
+      <section className="lg:pb-16 md:flex justify-between items-center">
+        <figure className="md:order-1 hover:scale-105 transition-transform mt-4 md:m-0">
           <img
             src="./public/img/foto1.jpg"
             alt="foto1"
             className="w-[90%] aspect-square object-cover rounded-full max-w-sm mx-auto"
           />
         </figure>
-        <article className="text-center mt-8 p-2 md:w-1/2 md:text-left">
-          <span className="my-name text-4xl lg:text-5xl font-semibold py-2">
-            Hola, yo soy Santiago Suarez
-          </span>
-          <p className="text-gray-color text-lg lg:text-xl my-4 lg:my-6 max-w-[500px]">
+        <article className="text-center p-2 md:w-1/2 md:text-left">
+          <p className="text-gray-color text-lg lg:text-xl my-4  max-w-[500px]">
             Soy desarrollador full stack con javaScript, react, nodejs, express
             y nestjs. Abajo puedes copiar mi email y ponernos en contacto.
           </p>

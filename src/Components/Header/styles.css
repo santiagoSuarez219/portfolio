@@ -1,36 +1,38 @@
-.my-name {
-  display: block;
-  font-family: monospace;
-  white-space: nowrap;
-  border-right: 2px solid #828282;
-  width: 28ch;
-
-  animation: typing 2s steps(28), blink 0.5s step-end alternate,
-    hideCursor 0.5s 2.5s forwards;
-  overflow: hidden;
-}
-
-@keyframes typing {
-  from {
-    width: 0;
-  }
-  to {
+@media (min-width: 768px) {
+  .my-name {
+    display: block;
+    font-family: monospace;
+    white-space: nowrap;
+    border-right: 2px solid #828282;
     width: 28ch;
-  }
-}
 
-@keyframes blink {
-  50% {
-    border-color: transparent;
+    animation: typing 2s steps(28), blink 0.5s step-end alternate,
+      hideCursor 0.5s 2.5s forwards;
+    overflow: hidden;
   }
-  0%,
-  100% {
-    border-color: #fff;
-  }
-}
 
-@keyframes hideCursor {
-  to {
-    border-right-width: 0;
+  @keyframes typing {
+    from {
+      width: 0;
+    }
+    to {
+      width: 28ch;
+    }
+  }
+
+  @keyframes blink {
+    50% {
+      border-color: transparent;
+    }
+    0%,
+    100% {
+      border-color: #fff;
+    }
+  }
+
+  @keyframes hideCursor {
+    to {
+      border-right-width: 0;
+    }
   }
 }
