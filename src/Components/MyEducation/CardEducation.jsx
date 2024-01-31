@@ -27,7 +27,7 @@ const CardEducation = ({ id, title, institucion, duracion, logo }) => {
       </figure>
       <article className="text-gray-color">
         <h1 className="text-base lg:text-xl">{title}</h1>
-        <h2 className="text-sm lg:text-lg">{institucion}</h2>
+        <h2 className="text-sm lg:text-lg font-medium">{institucion}</h2>
         <p className="text-xs lg:text-base">{duracion}</p>
       </article>
     </aside>

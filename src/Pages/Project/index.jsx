@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { HiArrowSmallLeft } from "react-icons/hi2";
 import ItemListProject from "../../Components/ItemListProject";
 import ToolProjectCard from "../../Components/ToolProjectCard";
+import { BiLogoGithub } from "react-icons/bi";
 import { Context } from "../../Context";
 
 const Project = () => {
@@ -38,15 +39,34 @@ const Project = () => {
             className="object-contain"
           />
         </figure>
-        <article className="">
-          <h2 className="mb-2 text-white text-lg text-right">
-            Tecnologias utilizadas
-          </h2>
-          <ul className="flex gap-4 justify-end">
-            {project.tools.map((tool, index) => (
-              <ToolProjectCard key={index} text={tool.name} icon={tool.icon} />
-            ))}
-          </ul>
+        <article className="flex justify-between">
+          <div>
+            <h2 className="mb-2 text-white text-lg">Repositorio</h2>
+            <div className="flex gap-6">
+              <a href={project.repositorioFrontend} target="_blanck">
+                <ToolProjectCard text={"Frontend"} icon={BiLogoGithub} />
+              </a>
+              {project.repositorioBackend && (
+                <a href={project.repositorioBackend} target="_blanck">
+                  <ToolProjectCard text={"Backend"} icon={BiLogoGithub} />
+                </a>
+              )}
+            </div>
+          </div>
+          <div>
+            <h2 className="mb-2 text-white text-lg text-right">
+              Tecnologias utilizadas
+            </h2>
+            <ul className="flex gap-4 justify-end">
+              {project.tools.map((tool, index) => (
+                <ToolProjectCard
+                  key={index}
+                  text={tool.name}
+                  icon={tool.icon}
+                />
+              ))}
+            </ul>
+          </div>
         </article>
       </div>
     </aside>

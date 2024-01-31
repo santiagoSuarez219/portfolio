@@ -37,6 +37,8 @@ const Provider = ({ children }) => {
       ],
       image: Ecommerce,
       style: true,
+      repositorioFrontend:
+        "https://github.com/santiagoSuarez219/app_tienda_en_linea",
     },
     {
       id: 2,
@@ -71,6 +73,10 @@ const Provider = ({ children }) => {
       ],
       image: Smartgrow,
       style: false,
+      repositorioFrontend:
+        "https://github.com/santiagoSuarez219/smartgrow_frontend_react",
+      repositorioBackend:
+        "https://github.com/santiagoSuarez219/smartgrow_backend_nest",
     },
   ]);
   const [project, setProject] = useState(projects[0]);
