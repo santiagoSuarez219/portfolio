@@ -13,7 +13,7 @@ const MySkills = () => {
       id="my-skills"
       className="md:py-6 text-center flex flex-col lg:gap-6 gap-4"
     >
-      <div className="w-full flex items-center justify-end gap-6 ">
+      <div className="w-full flex items-center justify-end gap-6 md:mb-6 mb-4">
         <a href="#header-section">
           <HiArrowSmallUp className="text-green-color w-10 h-10 animate-bounce" />
         </a>

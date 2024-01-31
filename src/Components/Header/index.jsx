@@ -8,7 +8,7 @@ import "./styles.css";
 
 const Header = () => {
   return (
-    <header id="header-section">
+    <header id="header-section" className="mt-4 md:mt-0">
       <Navbar />
       <span className="my-name text-4xl lg:text-5xl font-semibold py-2 lg:mt-16 md:mt-6">
         Hola, Yo soy Santiago Suarez
