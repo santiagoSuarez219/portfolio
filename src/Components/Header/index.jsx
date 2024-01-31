@@ -1,4 +1,3 @@
-import { useState } from "react";
 import { BiLogoGithub } from "react-icons/bi";
 import { BiSolidEnvelope } from "react-icons/bi";
 import { BiLogoLinkedinSquare } from "react-icons/bi";
@@ -9,7 +8,7 @@ import "./styles.css";
 
 const Header = () => {
   return (
-    <header>
+    <header id="header-section">
       <Navbar />
       <span className="my-name text-4xl lg:text-5xl font-semibold py-2 lg:mt-16 md:mt-6">
         Hola, Yo soy Santiago Suarez
@@ -30,11 +29,19 @@ const Header = () => {
           <ContactContainer
             text={"santiago8628@gmail.com"}
             icon={BiSolidEnvelope}
+            value={"correo"}
           />
-          <ContactContainer text={"santiagoSuarez219"} icon={BiLogoGithub} />
+          <ContactContainer
+            text={"santiagoSuarez219"}
+            icon={BiLogoGithub}
+            value={"github"}
+            link={"https://github.com/santiagoSuarez219"}
+          />
           <ContactContainer
             text={"santiagosuarez219"}
             icon={BiLogoLinkedinSquare}
+            value={"linkedin"}
+            link={"https://www.linkedin.com/in/santiagosuarez219"}
           />
 
           <Toaster />

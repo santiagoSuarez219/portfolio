@@ -1,4 +1,5 @@
-import { useState, useEffect, useContext } from "react";
+import { useEffect, useContext } from "react";
+import { HiArrowSmallUp } from "react-icons/hi2";
 import CardProject from "./CardProject";
 import { Context } from "../../Context";
 
@@ -18,12 +19,15 @@ const MyProjects = () => {
 
   return (
     <section
-      id="my-skills"
+      id="my-projects"
       className="py-4 md:py-16 text-center lg:text-left flex flex-col items-center"
     >
-      <h2 className="w-full text-left text-4xl mb-4 md:mb-16 lg:text-5xl">
-        Mis proyectos
-      </h2>
+      <div className="w-full flex items-center mb-4 md:mb-16 gap-6 ">
+        <h2 className="text-left text-4xl lg:text-5xl">Mis proyectos</h2>
+        <a href="#header-section">
+          <HiArrowSmallUp className="text-green-color w-10 h-10 animate-bounce" />
+        </a>
+      </div>
       <div className="w-full lg:w-4/5 flex flex-col md:flex-row items-center justify-center overflow-hidden md:h-[430px] gap-6">
         {projects.map((project) => (
           <CardProject

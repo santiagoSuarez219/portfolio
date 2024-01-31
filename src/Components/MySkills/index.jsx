@@ -4,6 +4,7 @@ import { BiLogoJavascript } from "react-icons/bi";
 import { BiLogoNodejs } from "react-icons/bi";
 import { BiLogoMongodb } from "react-icons/bi";
 import { SiNestjs } from "react-icons/si";
+import { HiArrowSmallUp } from "react-icons/hi2";
 import LayaoutSkills from "./LayaoutSkills";
 
 const MySkills = () => {
@@ -14,9 +15,12 @@ const MySkills = () => {
       id="my-skills"
       className="md:py-16 text-center flex flex-col lg:gap-6 gap-4"
     >
-      <h2 className="text-4xl mb-4 md:mb-16 lg:text-5xl md:text-right">
-        Mis habilidades
-      </h2>
+      <div className="w-full flex items-center justify-end mb-4 md:mb-6 gap-6 ">
+        <a href="#header-section">
+          <HiArrowSmallUp className="text-green-color w-10 h-10 animate-bounce" />
+        </a>
+        <h2 className="text-4xl lg:text-5xl">Mis habilidades</h2>
+      </div>
       <div className="w-full mb-8 md:mb-0 flex flex-col gap-4 md:gap-0 md:flex-row items-center">
         <h3 className={`${stylesSubtitles} md:text-left`}>Frontend</h3>
         <LayaoutSkills

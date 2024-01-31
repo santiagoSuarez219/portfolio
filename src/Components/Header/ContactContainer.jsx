@@ -1,4 +1,3 @@
-import { BiSolidEnvelope } from "react-icons/bi";
 import { CopyToClipboard } from "react-copy-to-clipboard";
 import { toast } from "react-hot-toast";
 
@@ -12,19 +11,37 @@ const alertCopy = () => {
   });
 };
 
-const ContactContainer = ({ text, icon: Icon }) => {
+const ContactContainer = ({ text, icon: Icon, value, link }) => {
   return (
-    <CopyToClipboard text={text}>
-      <div
-        className="flex items-center gap-2 md:gap-4 text-base md:text-lg lg:text-xl text-gray-color cursor-pointer mb-2"
-        onClick={() => alertCopy()}
-      >
-        <div className="icon-container">
-          <Icon className="text-green-color" />
-        </div>
-        <h3 className="hover:text-green-color transition-all">{text}</h3>
-      </div>
-    </CopyToClipboard>
+    <>
+      {value == "correo" ? (
+        <CopyToClipboard text={text}>
+          <div
+            className="flex items-center gap-2 md:gap-4 text-base md:text-lg lg:text-xl text-gray-color cursor-pointer mb-2"
+            onClick={() => alertCopy()}
+          >
+            <div className="icon-container">
+              <Icon className="text-green-color" />
+            </div>
+            <h3 className="lg:hover:text-green-color transition-all">{text}</h3>
+          </div>
+        </CopyToClipboard>
+      ) : (
+        <CopyToClipboard text={text}>
+          <a
+            href={link}
+            target="_blank"
+            className="flex items-center gap-2 md:gap-4 text-base md:text-lg lg:text-xl text-gray-color cursor-pointer mb-2"
+          >
+            <div className="icon-container">
+              <Icon className="text-green-color" />
+            </div>
+            <h3 className="lg:hover:text-green-color transition-all">{text}</h3>
+          </a>
+        </CopyToClipboard>
+      )}
+    </>
   );
 };
+
 export default ContactContainer;

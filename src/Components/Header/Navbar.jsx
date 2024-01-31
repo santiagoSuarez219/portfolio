@@ -30,15 +30,17 @@ const Navbar = () => {
         lg:relative lg:flex lg:gap-6 lg:bg-transparent lg:clip-circle-full lg:text-base
       `}
       >
-        <li>
-          <a href="#about-me">Proyectos</a>
+        <li className="hover:text-green-color">
+          <a href="#my-projects">Proyectos</a>
         </li>
-        <li>
+        <li className="hover:text-green-color">
           <a href="#my-skills">Habilidades</a>
         </li>
-        <li>Educacion</li>
-        <li>Experiencia</li>
-        <li>Contacto</li>
+        <li className="hover:text-green-color">
+          <a href="#my-education">Educacion</a>
+        </li>
+        <li className="hover:text-green-color">Experiencia</li>
+        <li className="hover:text-green-color">Contacto</li>
       </ul>
     </nav>
   );

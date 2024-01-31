@@ -4,6 +4,7 @@ import Home from "../Home";
 import Project from "../Project";
 import NotFound from "../NotFound";
 import { Provider } from "../../Context";
+import MyEducation from "../../Components/MyEducation";
 
 const AppRoutes = () => {
   let routes = useRoutes([
@@ -14,6 +15,10 @@ const AppRoutes = () => {
     {
       path: "/project",
       element: <Project />,
+    },
+    {
+      path: "/education",
+      element: <MyEducation />,
     },
     { path: "/*", element: <NotFound /> },
   ]);

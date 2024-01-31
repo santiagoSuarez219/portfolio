@@ -31,7 +31,7 @@ const Project = () => {
         />
       </article>
       <div className="flex flex-col gap-6 md:p-4">
-        <figure className="hidden md:block w-full bg-card-color p-2 rounded-lg md:order-last ld:order-none">
+        <figure className="hidden md:block w-full bg-card-color p-2 rounded-lg md:order-last lg:order-none">
           <img
             src={project.image}
             alt="image-project"
