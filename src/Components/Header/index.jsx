@@ -4,6 +4,8 @@ import { BiLogoLinkedinSquare } from "react-icons/bi";
 import { Toaster } from "react-hot-toast";
 import Navbar from "./Navbar";
 import ContactContainer from "./ContactContainer";
+import PerfilImage from "../../img/foto1.jpg";
+import CV from "../../pdf/CVFullStack.pdf";
 import "./styles.css";
 
 const Header = () => {
@@ -16,7 +18,7 @@ const Header = () => {
       <section className="mt-4 lg:mt-6 md:flex justify-between items-center">
         <figure className="md:order-1 hover:scale-105 transition-transform ">
           <img
-            src="./public/img/foto1.jpg"
+            src={PerfilImage}
             alt="foto1"
             className="w-[90%] aspect-square object-cover rounded-full max-w-sm mx-auto"
           />
@@ -46,7 +48,7 @@ const Header = () => {
           />
           <Toaster />
           <a
-            href="./public/pdf/CVFullStack.pdf"
+            href={CV}
             target="_blank"
             className="w-full lg:w-2/3 mt-4 h-16 bg-green-color flex items-center justify-center rounded-lg hover:scale-105 transition-transform text-base md:text-lg lg:text-xl font-semibold"
           >
