@@ -1,5 +1,4 @@
 import { useRoutes, BrowserRouter } from "react-router-dom";
-import Layaout from "../../Components/Layaout";
 import Home from "../Home";
 import Project from "../Project";
 import NotFound from "../NotFound";
@@ -24,9 +23,7 @@ const App = () => {
   return (
     <BrowserRouter>
       <Provider>
-        <Layaout>
-          <AppRoutes />
-        </Layaout>
+        <AppRoutes />
       </Provider>
     </BrowserRouter>
   );

@@ -9,13 +9,13 @@ import { Context } from "../../Context";
 const Project = () => {
   const { project } = useContext(Context);
   return (
-    <aside className="w-full lg:h-screen grid lg:grid-cols-2 py-4 md:py-6 md:gap-6 gap-4 text-gray-color text-base md:text-lg items-center">
-      <article className="w-full h-full flex flex-col justify-center md:gap-6 gap-4">
-        <div className="flex items-center md:gap-6 gap-4">
+    <aside className="w-full p-4 lg:p-6 grid lg:gap-0 gap-4 text-gray-color text-base content-center">
+      <article className="place-self-center max-w-screen-lg flex flex-col gap-4 lg:text-justify">
+        <div className="flex lg:gap-6 gap-4 items-center">
           <Link to="/">
-            <HiArrowSmallLeft className="text-green-color w-6 h-6 md:w-10 md:h-10 animate-bounce cursor-pointer" />
+            <HiArrowSmallLeft className="text-green-color w-6 h-6 md:w-10 md:h-10 cursor-pointer" />
           </Link>
-          <h1 className="w-full text-2xl md:text-5xl text-white">
+          <h1 className="w-full text-2xl md:text-3xl lg:text-5xl text-white">
             {project.title}
           </h1>
         </div>
@@ -25,23 +25,18 @@ const Project = () => {
             <ItemListProject key={index} text={item} />
           ))}
         </ul>
-        <input
-          type="submit"
-          value="Ir al proyecto"
-          className="w-full bg-green-color/85 text-white p-2 rounded-lg cursor-pointer text-lg md:hover:bg-green-color transition-all animate-bounce md:animate-none "
-        />
       </article>
-      <div className="flex flex-col gap-6 md:p-4">
-        <figure className="hidden md:block w-full bg-card-color p-2 rounded-lg md:order-last lg:order-none">
+      <div className="flex flex-col lg:gap-6 md:gap-4 md:p-4 lg:p-0 max-w-screen-lg lg:place-self-center lg:flex-col-reverse">
+        <figure className="w-[70%] bg-card-color p-1 md:p-2 rounded-lg self-end">
           <img
             src={project.image}
             alt="image-project"
             className="object-contain"
           />
         </figure>
-        <article className="flex justify-between">
+        <article className="mt-4 flex md:justify-between lg:justify-start flex-col gap-4 lg:gap-6">
           <div>
-            <h2 className="mb-2 text-white text-lg">Repositorio</h2>
+            <h2 className="mb-2 text-white text-base">Repositorio</h2>
             <div className="flex gap-6">
               <a href={project.repositorioFrontend} target="_blanck">
                 <ToolProjectCard text={"Frontend"} icon={BiLogoGithub} />
@@ -54,10 +49,10 @@ const Project = () => {
             </div>
           </div>
           <div>
-            <h2 className="mb-2 text-white text-lg text-right">
+            <h2 className="mb-2 text-white text-base">
               Tecnologias utilizadas
             </h2>
-            <ul className="flex gap-4 justify-end">
+            <ul className="flex gap-4">
               {project.tools.map((tool, index) => (
                 <ToolProjectCard
                   key={index}
