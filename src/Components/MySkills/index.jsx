@@ -11,13 +11,13 @@ const MySkills = () => {
   return (
     <section
       id="my-skills"
-      className="md:py-6 text-center flex flex-col lg:gap-6 gap-4"
+      className="mt-8 lg:mt-12 flex flex-col lg:gap-6 gap-4"
     >
-      <div className="w-full flex items-center justify-end gap-6 md:mb-6 mb-4">
+      <div className="w-full flex md:justify-end md:gap-4">
         <a href="#header-section">
-          <HiArrowSmallUp className="text-green-color w-10 h-10 animate-bounce" />
+          <HiArrowSmallUp className="hidden md:block text-green-color w-10 h-10 animate-bounce" />
         </a>
-        <h2 className="text-3xl lg:text-5xl text-right">Mis habilidades</h2>
+        <h2 className="text-4xl lg:text-5xl">Skills</h2>
       </div>
       <div className="w-full grid md:grid-cols-2 md:gap-6 gap-4">
         <div>

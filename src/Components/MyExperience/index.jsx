@@ -4,17 +4,14 @@ import LogoItm from "../../img/logo-itm.png";
 
 const MyExperience = () => {
   return (
-    <section
-      id="my-experience"
-      className="md:text-left flex flex-col items-center md:mb-16"
-    >
-      <div className="w-full flex items-center mb-4 md:mb-6 gap-6 justify-end">
+    <section id="my-experience" className="flex flex-col items-center mt-8">
+      <div className="w-full flex items-center md:gap-4 lg:gap-6 md:justify-end">
         <h2 className="text-left text-4xl lg:text-5xl">Mi Experiencia</h2>
-        <a href="#header-section">
+        <a href="#header-section" className="hidden md:block">
           <HiArrowSmallUp className="text-green-color w-10 h-10 animate-bounce" />
         </a>
       </div>
-      <div className="container-cards w-full grid md:grid-cols-1 md:gap-6 gap-4">
+      <div className="mt-4 w-full grid md:grid-cols-1 md:gap-6 gap-4">
         <CardEducation
           id={1}
           title={"Desarrollador Fullstack"}

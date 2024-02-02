@@ -2,9 +2,9 @@ import CardSkill from "./CardSkill";
 
 const LayaoutSkills = (props) => {
   const stylesSubtitles =
-    "place-self-center text-gray-color text-2xl lg:text-4xl opacity-80 transition hover:opacity-100 mb-6 text-left";
+    "place-self-center text-gray-color text-2xl lg:text-4xl opacity-80 transition hover:opacity-100";
   return (
-    <div className="w-full grid grid-cols-2 grid-rows-2 md:gap-6 gap-4">
+    <div className="w-full grid grid-cols-2 grid-rows-2 lg:gap-6 gap-4">
       <CardSkill
         text={props.texts[0]}
         value={props.value[0]}

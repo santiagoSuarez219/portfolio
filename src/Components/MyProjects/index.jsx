@@ -20,15 +20,15 @@ const MyProjects = () => {
   return (
     <section
       id="my-projects"
-      className="py-4 md:py-16 text-center lg:text-left flex flex-col items-center"
+      className="mt-8 lg:mt-12 flex flex-col items-center"
     >
-      <div className="w-full flex items-center mb-4 md:mb-16 gap-6 ">
-        <h2 className="text-left text-4xl lg:text-5xl">Mis proyectos</h2>
-        <a href="#header-section">
+      <div className="w-full flex items-center gap-4 lg:gap-6 ">
+        <h2 className="text-4xl lg:text-5xl">Projects</h2>
+        <a href="#header-section" className="hidden md:block">
           <HiArrowSmallUp className="text-green-color w-10 h-10 animate-bounce" />
         </a>
       </div>
-      <div className="w-full lg:w-4/5 flex flex-col md:flex-row items-center justify-center overflow-hidden md:h-[430px] gap-6">
+      <div className="mt-4 lg:mt-6 w-full lg:w-4/5 flex flex-col md:flex-row items-center justify-center overflow-hidden md:h-[430px] gap-6">
         {projects.map((project) => (
           <CardProject
             key={project.id}

@@ -8,23 +8,24 @@ import "./styles.css";
 
 const Header = () => {
   return (
-    <header id="header-section" className="mt-4 md:mt-0">
+    <header id="header-section">
       <Navbar />
       <span className="my-name text-4xl lg:text-5xl font-semibold py-2 lg:mt-16 md:mt-6">
         Hola, Yo soy Santiago Suarez
       </span>
-      <section className="lg:pb-16 md:flex justify-between items-center">
-        <figure className="md:order-1 hover:scale-105 transition-transform mt-4 md:m-0">
+      <section className="mt-4 lg:mt-6 md:flex justify-between items-center">
+        <figure className="md:order-1 hover:scale-105 transition-transform ">
           <img
             src="./public/img/foto1.jpg"
             alt="foto1"
             className="w-[90%] aspect-square object-cover rounded-full max-w-sm mx-auto"
           />
         </figure>
-        <article className="text-center p-2 md:w-1/2 md:text-left">
-          <p className="text-gray-color text-lg lg:text-xl my-4  max-w-[500px]">
-            Soy desarrollador full stack con javaScript, react, nodejs, express
-            y nestjs. Abajo puedes copiar mi email y ponernos en contacto.
+        <article className="text-justify mt-4 md:mt-0 md:w-1/2 md:text-left">
+          <p className="text-gray-color text-lg lg:text-xl max-w-[500px]">
+            Soy desarrollador junior full stack con el stack MERN. Tengo 6 meses
+            de experiencia en desarrollo de aplicaciones web. Abajo puedes
+            copiar mi email y ponernos en contacto.
           </p>
           <ContactContainer
             text={"santiago8628@gmail.com"}
@@ -43,12 +44,11 @@ const Header = () => {
             value={"linkedin"}
             link={"https://www.linkedin.com/in/santiagosuarez219"}
           />
-
           <Toaster />
           <a
             href="./public/pdf/CVFullStack.pdf"
             target="_blank"
-            className="w-full lg:w-2/3 mt-6 h-16 bg-green-color flex items-center justify-center rounded-lg hover:scale-105 transition-transform text-base md:text-lg lg:text-xl font-semibold"
+            className="w-full lg:w-2/3 mt-4 h-16 bg-green-color flex items-center justify-center rounded-lg hover:scale-105 transition-transform text-base md:text-lg lg:text-xl font-semibold"
           >
             Ver CV
           </a>

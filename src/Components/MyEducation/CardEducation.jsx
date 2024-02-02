@@ -23,13 +23,13 @@ const CardEducation = ({
 
   return (
     <aside
-      className={`w-full md:px-2 md:grid grid-cols-3 gap-6 items-center text-gray-color ${selectStyleById(
+      className={`w-full grid grid-cols-3 gap-6 items-center text-gray-color ${selectStyleById(
         id
       )}`}
     >
       {!description && (
         <figure
-          className={`hidden md:block w-full p-4 rounded-full aspect-square ${selectBackgrounColor(
+          className={`w-full p-4 rounded-full aspect-square ${selectBackgrounColor(
             institucion
           )}`}
         >
@@ -48,7 +48,7 @@ const CardEducation = ({
               {title} - {institucion}
             </h1>
             <p className="text-sm lg:text-base font-semibold">{duracion}</p>
-            <p className="hidden md:block text-sm lg:text-base text-justify mt-2">
+            <p className="text-sm lg:text-base text-justify mt-2">
               {description}
             </p>
           </>

@@ -7,15 +7,12 @@ const MyResearchExperience = () => {
   return (
     <section
       id="my-education"
-      className="hidden md:flex py-4 md:py-6 md:text-left flex-col items-center"
+      className="py-4 md:py-6 md:text-left flex-col items-center"
     >
       <div className="w-full flex items-center mb-4 md:mb-6 gap-6">
-        <h2 className="text-left text-4xl lg:text-5xl">
+        <h2 className="text-left text-3xl lg:text-4xl">
           Experiencia en investigacion
         </h2>
-        <a href="#header-section">
-          <HiArrowSmallUp className="text-green-color w-10 h-10 animate-bounce" />
-        </a>
       </div>
       <div className="container-cards w-full grid md:grid-cols-2 md:gap-6 gap-4">
         <CardEducation

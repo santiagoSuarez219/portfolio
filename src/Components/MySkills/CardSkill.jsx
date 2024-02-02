@@ -1,6 +1,6 @@
 const CardSkill = ({ text, value, icon: Icon }) => {
   return (
-    <div className="opacity-80 transition hover:opacity-100 p-6 bg-card-color rounded-full flex flex-col items-center justify-center text-green-color aspect-square">
+    <div className="md:opacity-80 transition hover:opacity-100 bg-card-color rounded-full flex flex-col items-center justify-center text-green-color aspect-square">
       <figure className="hidden md:block w-3/5 h-3/5">
         <Icon className="w-full h-full object-cover" />
       </figure>

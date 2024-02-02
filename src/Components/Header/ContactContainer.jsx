@@ -17,7 +17,7 @@ const ContactContainer = ({ text, icon: Icon, value, link }) => {
       {value == "correo" ? (
         <CopyToClipboard text={text}>
           <div
-            className="flex items-center gap-2 md:gap-4 text-base md:text-lg lg:text-xl text-gray-color cursor-pointer mb-2"
+            className="flex items-center mt-4 gap-2 text-base md:text-lg lg:text-xl text-gray-color cursor-pointer"
             onClick={() => alertCopy()}
           >
             <div className="icon-container">
@@ -30,8 +30,8 @@ const ContactContainer = ({ text, icon: Icon, value, link }) => {
         <CopyToClipboard text={text}>
           <a
             href={link}
-            target="_blank"
-            className="flex items-center gap-2 md:gap-4 text-base md:text-lg lg:text-xl text-gray-color cursor-pointer mb-2"
+            target="_blanck"
+            className="flex mt-2 items-center gap-2 text-base md:text-lg lg:text-xl text-gray-color cursor-pointer"
           >
             <div className="icon-container">
               <Icon className="text-green-color" />

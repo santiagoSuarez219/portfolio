@@ -19,7 +19,7 @@ const CardProject = ({ project, setProject }) => {
       </figure>
       <Link
         to="/project"
-        className={`text-2xl absolute bottom-5 left-8 m-0 md:opacity-0 flex items-center gap-3 ${
+        className={`text-2xl absolute md:bottom-5 bottom-4 md:left-8 left-4 m-0 md:opacity-0 flex items-center gap-3 ${
           style &&
           "md:opacity-100 duration-300 ease-in delay-700 cursor-pointer"
         }`}
