@@ -1,3 +1,41 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: monospace;
+  background-color: #171717;
+  color: white;
+}
+
+@layer base {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-bold;
+  }
+
+  input,
+  textarea {
+    @apply bg-color-background border-gray-color;
+  }
+}
+
+@layer components {
+  .icon-container {
+    @apply p-2 w-max aspect-square bg-card-color rounded-full hover:bg-card-color/50;
+  }
+
+  .icons {
+    @apply text-green-color w-10 h-10;
+  }
+
+  .focus-input {
+    @apply outline-none focus:ring-1 focus:ring-green-color focus:ring-inset transition;
+  }
+}
