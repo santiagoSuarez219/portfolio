@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
+import PerfilIcon from "../../img/logo.png";
 
 const Navbar = () => {
   const [openMenu, setOpenMenu] = useState(false);
@@ -7,7 +8,7 @@ const Navbar = () => {
     <nav className="hidden md:flex w-full h-20 justify-between items-center">
       <ul className="flex items-center lg:gap-4">
         <figure className="hidden lg:block bg-card-color w-20 h-20 aspect-square object-cover rounded-full">
-          <img src="../public/img/logo.png" alt="logo" />
+          <img src={PerfilIcon} alt="logo" />
         </figure>
         <li className="hidden md:block max-w-[300px] text-3xl font-semibold">
           <Link to="/">Santiago S.</Link>
