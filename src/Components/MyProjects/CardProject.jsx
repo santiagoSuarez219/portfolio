@@ -13,19 +13,19 @@ const CardProject = ({ project, setProject, setOpenModal }) => {
       </figure>
       <h3 className="text-3xl">{title}</h3>
       <p className="text-base text-justify lg:mt-6 lg:text-lg">
-        {project.description}
+        {project.description}{" "}
+        <span
+          className="text-base text-green-color cursor-pointer"
+          onClick={() => (setProject(project), setOpenModal(true))}
+        >
+          Leer mas
+        </span>
       </p>
       <ul className="flex gap-4 mt-4">
         {project.tools.map((tool, index) => (
           <ToolProjectCard key={index} text={tool.name} icon={tool.icon} />
         ))}
       </ul>
-      <p
-        className="text-base mt-4 w-full flex justify-end text-green-color cursor-pointer"
-        onClick={() => (setProject(project), setOpenModal(true))}
-      >
-        Leer mas
-      </p>
     </aside>
     // <div
     //   className={`h-full w-full md:h-full md:w-0 md:grow-[0.5] relative cursor-crosshair rounded-3xl transition-all ease-in duration-700 border-2 border-green-color ${
