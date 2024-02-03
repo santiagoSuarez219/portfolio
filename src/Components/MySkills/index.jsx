@@ -17,7 +17,7 @@ const MySkills = () => {
         <a href="#header-section">
           <HiArrowSmallUp className="hidden md:block text-green-color w-10 h-10 animate-bounce" />
         </a>
-        <h2 className="text-4xl lg:text-5xl">Skills</h2>
+        <h2 className="text-4xl lg:text-5xl">Habilidades</h2>
       </div>
       <div className="w-full grid md:grid-cols-2 md:gap-6 gap-4">
         <div>

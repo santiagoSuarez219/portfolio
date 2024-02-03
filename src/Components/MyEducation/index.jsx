@@ -8,7 +8,7 @@ const MyEducation = () => {
   return (
     <section id="my-education" className="mt-8 flex flex-col items-center">
       <div className="w-full flex items-center md:gap-4">
-        <h2 className="text-left text-4xl lg:text-5xl">Education</h2>
+        <h2 className="text-left text-4xl lg:text-5xl">Educacion</h2>
         <a href="#header-section" className="hidden md:block">
           <HiArrowSmallUp className="text-green-color w-10 h-10 animate-bounce" />
         </a>
