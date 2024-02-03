@@ -13,12 +13,9 @@ const MySkills = () => {
       id="my-skills"
       className="mt-8 lg:mt-12 flex flex-col lg:gap-6 gap-4"
     >
-      <div className="w-full flex md:justify-end md:gap-4">
-        <a href="#header-section">
-          <HiArrowSmallUp className="hidden md:block text-green-color w-10 h-10 animate-bounce" />
-        </a>
-        <h2 className="text-4xl lg:text-5xl">Habilidades</h2>
-      </div>
+      <h2 className="text-4xl lg:text-5xl w-full flex justify-end">
+        Habilidades
+      </h2>
       <div className="w-full grid md:grid-cols-2 md:gap-6 gap-4">
         <div>
           <LayaoutSkills
