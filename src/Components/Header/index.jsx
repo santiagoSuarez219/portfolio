@@ -5,7 +5,7 @@ import { Toaster } from "react-hot-toast";
 import Navbar from "./Navbar";
 import ContactContainer from "./ContactContainer";
 import PerfilImage from "../../img/foto1.jpg";
-import CV from "../../pdf/CVFullStack.pdf";
+import CV from "../../pdf/CV.pdf";
 import "./styles.css";
 
 const Header = () => {
