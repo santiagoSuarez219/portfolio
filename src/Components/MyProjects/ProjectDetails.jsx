@@ -11,7 +11,7 @@ const ProjectDetails = () => {
       <h1 className="text-3xl text-white">{project.title}</h1>
       <div className="lg:flex lg:gap-6">
         <HiOutlineX
-          className="text-3xl absolute top-4 right-4 text-green-color"
+          className="text-3xl absolute top-4 right-4 text-green-color cursor-pointer"
           onClick={() => setOpenModal(false)}
         />
         <figure className="mt-4 border border-green-color rounded-lg lg:w-1/2">
