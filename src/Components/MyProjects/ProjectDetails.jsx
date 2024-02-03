@@ -7,7 +7,7 @@ import { BiLogoGithub } from "react-icons/bi";
 const ProjectDetails = () => {
   const { project, setOpenModal } = useContext(Context);
   return (
-    <div className="bg-card-color w-full lg:relative fixed bottom-[64px] md:bottom-0 h-[70%] md:h-[90%] lg:h-auto lg:w-[90%] rounded-t-lg lg:rounded-b-lg p-4 overflow-y-auto text-gray-color">
+    <div className="bg-card-color w-full lg:relative fixed bottom-[64px] md:bottom-0 h-[70%] md:h-[90%] lg:h-auto lg:w-[90%] rounded-t-lg lg:rounded-b-lg p-4 lg:p-6 overflow-y-auto text-gray-color">
       <h1 className="text-3xl text-white">{project.title}</h1>
       <div className="lg:flex lg:gap-6">
         <HiOutlineX
