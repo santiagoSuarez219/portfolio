@@ -8,10 +8,12 @@ import MyExperience from "../../Components/MyExperience";
 import MyResearchExperience from "../../Components/MyResearchExperience";
 import Layaout from "../../Components/Layaout";
 import Tabbar from "../../Components/Tabbar";
+import Navbar from "../../Components/Header/Navbar";
 
 const Home = () => {
   return (
     <>
+      <Navbar />
       <Layaout>
         <Header />
         <AboutMe />
