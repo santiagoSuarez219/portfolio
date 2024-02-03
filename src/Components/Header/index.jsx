@@ -11,8 +11,7 @@ import "./styles.css";
 const Header = () => {
   return (
     <header id="header-section">
-      <Navbar />
-      <span className="my-name text-4xl lg:text-5xl font-semibold py-2 lg:mt-16 md:mt-6">
+      <span className="my-name text-4xl lg:text-5xl font-semibold py-2 lg:mt-6 md:mt-6">
         Hola, Yo soy Santiago Suarez
       </span>
       <section className="mt-4 lg:mt-6 md:flex justify-between items-center">

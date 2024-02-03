@@ -6,10 +6,7 @@ const MyExperience = () => {
   return (
     <section id="my-experience" className="flex flex-col items-center mt-8">
       <div className="w-full flex items-center md:gap-4 lg:gap-6 md:justify-end">
-        <h2 className="text-left text-4xl lg:text-5xl">Mi Experiencia</h2>
-        <a href="#header-section" className="hidden md:block">
-          <HiArrowSmallUp className="text-green-color w-10 h-10 animate-bounce" />
-        </a>
+        <h2 className="text-left text-4xl lg:text-5xl">Experiencia</h2>
       </div>
       <div className="mt-4 w-full grid md:grid-cols-1 md:gap-6 gap-4">
         <CardEducation

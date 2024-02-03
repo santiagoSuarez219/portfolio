@@ -3,7 +3,7 @@ import AboutMeImg from "../../img/portfolio03.jpg";
 const AboutMe = () => {
   return (
     <main id="about-me" className="mt-8 lg:mt-12">
-      <h2 className="text-4xl lg:text-5xl md:text-right">About me</h2>
+      <h2 className="text-4xl lg:text-5xl md:text-right">Acerca de mi</h2>
       <div className="flex w-full lg:justify-between mt-4 lg:mt-6">
         <figure className="hidden lg:block w-[45%] hover:scale-105 transition-transform">
           <img
