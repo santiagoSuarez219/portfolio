@@ -19,13 +19,10 @@ const MyProjects = () => {
   }, [project]);
 
   return (
-    <section
-      id="my-projects"
-      className="mt-8 lg:mt-12 flex flex-col items-center"
-    >
+    <section id="my-projects" className="mt-8 lg:mt-12 flex flex-col">
       <h2 className="w-full text-4xl lg:text-5xl">Proyectos</h2>
 
-      <div className="mt-4 lg:mt-6 w-full lg:w-4/5 flex flex-col md:flex-row items-center justify-center overflow-hidden md:h-[430px] gap-6">
+      <div className="mt-4 lg:mt-6 w-full grid md:grid-cols-2 lg:grid-cols-3 mb-8 gap-6">
         {projects.map((project) => (
           <CardProject
             key={project.id}
