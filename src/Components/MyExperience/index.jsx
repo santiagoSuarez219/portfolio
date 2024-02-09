@@ -13,7 +13,7 @@ const MyExperience = () => {
           id={1}
           title={"Desarrollador Fullstack"}
           institucion={"Instituto Tecnologico Metropolitano"}
-          duracion={"6 meses"}
+          duracion={"1 año"}
           logo={LogoItm}
           description={
             "Desarrolle una aplicación web y de internet de las cosas para supervisar y gestionar un sistema de cultivo hidropónico. Con esta aplicación se pueden visualizar datos en tiempo real, crear graficas de comportamiento de las variables e interactuar directamente con el hardware del sistema. Utilice tecnologías, tales como, Mongo DB para el almacenamiento de los datos, NestJS para crear una API Rest, ReactJS, TailwindCSS y Vite para crear una interfaz de usuario interactiva y el protocolo de comunicación MQTT para la comunicación de todas las partes del sistema"
