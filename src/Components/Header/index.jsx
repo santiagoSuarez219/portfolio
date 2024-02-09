@@ -24,7 +24,7 @@ const Header = () => {
         </figure>
         <article className="text-justify mt-4 md:mt-0 md:w-1/2 md:text-left">
           <p className="text-gray-color text-lg lg:text-xl max-w-[500px]">
-            Soy desarrollador junior full stack con el stack MERN. Tengo 6 meses
+            Soy desarrollador junior full stack con el stack MERN. Tengo 1 año
             de experiencia en desarrollo de aplicaciones web. Abajo puedes
             copiar mi email y ponernos en contacto.
           </p>
